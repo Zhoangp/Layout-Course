@@ -16,7 +16,7 @@ const HomeTemplate = (props) => {
   const navigate = useNavigate()
   const {check} = useSelector(state => state.UserReducer)
   const { Component } = props;
- 
+  console.log(1)
   // on top when navigate
   const url = useLocation()
 
