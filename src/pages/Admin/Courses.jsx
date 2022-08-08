@@ -30,7 +30,6 @@ const Courses = (props) => {
         initialValues={{
           tenKH: "",
           tacGia: "",
-
         }}
       >
         {(formikProps) => {

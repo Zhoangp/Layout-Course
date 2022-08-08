@@ -55,7 +55,6 @@ const User = (props) => {
               )
             }}
           </Formik>
-         
         </div>
         {disable ? 
         <div className="listUsers__button">

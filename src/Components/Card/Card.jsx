@@ -29,15 +29,13 @@ const Card = (props) => {
             <div className="card__evalute">
               Review (<span>4.5</span>) <GiRoundStar /> 
             </div>
-            <div className="card__content">Economic | Graphic Design at...</div>
-
-           
+            <div className="card__content">Economic | Graphic Design at...</div> 
           </div>
         </div>
       </NavLink>
       <div onClick={() => {
               console.log("ok")
-            }} className="card__price">+Favourite</div>
+            }} className="card__price">+ Favourite</div>
     </div>
   );
 };

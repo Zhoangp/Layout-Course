@@ -1,9 +1,6 @@
-import {
-    storage
-} from "../../Firebase";
-import {
-    actionTypes
-} from "./types";
+import axios from "axios";
+import {storage} from "../../Firebase";
+import {actionTypes} from "./types";
 
 export const upLoadFile = (file, folder) => {
     return async dispatch => {
@@ -29,7 +26,7 @@ export const upLoadFile = (file, folder) => {
                         .child(file.name)
                         .getDownloadURL()
                         .then((url) => {
-                            console.log(url);
+                            console.log(url)
                             alert("Upload thanh cong!");
                             dispatch({
                                 type: actionTypes.LOADING
@@ -41,3 +38,7 @@ export const upLoadFile = (file, folder) => {
         } else alert("VUi long chon file");
     }
 }
+
+
+
+
